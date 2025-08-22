@@ -1,0 +1,52 @@
+{
+  "name": "md-catalog-extension",
+  "displayName": "Markdown Catalog Viewer",
+  "description": "A VS Code extension to preview .catalog.md files in the sidebar",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onView:mdCatalogViewer"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "id": "mdCatalogViewer",
+          "name": "Catalog Viewer",
+          "type": "webview"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "16.x",
+    "eslint": "^8.56.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Merlin-Xu-G/md-catalog-extension.git"
+  },
+  "publisher": "merlin-xu",
+  "keywords": [
+    "markdown",
+    "catalog",
+    "sidebar",
+    "preview"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Merlin-Xu-G/md-catalog-extension/issues"
+  },
+  "homepage": "https://github.com/Merlin-Xu-G/md-catalog-extension/blob/main/README.md"
+}
